@@ -22,25 +22,22 @@ public class MessagingConfig {
     public String FILE_PATTERN = "*.mpeg";
 
     @Bean
-    public MessageChannel fileChannel() {
+    public MessageChannel httpChannel() {
         return new DirectChannel();
     }
 
-    @Bean
-    @InboundChannelAdapter(value = "fileChannel", poller = @Poller(fixedDelay = "1000"))
-    public MessageSource<File> fileReadingMessageSource() {
-        FileReadingMessageSource sourceReader= new FileReadingMessageSource();
-        sourceReader.setDirectory(new File(INPUT_DIR));
-        sourceReader.setFilter(new SimplePatternFileListFilter(FILE_PATTERN));
-        return sourceReader;
-    }
+//    @Bean
+//    @InboundChannelAdapter(value = "httpChannel", poller = @Poller(fixedDelay = "1000"))
+//    public MessageSource<File> fileReadingMessageSource() {
+//        FileReadingMessageSource sourceReader= new FileReadingMessageSource();
+//        sourceReader.setDirectory(new File(INPUT_DIR));
+//        sourceReader.setFilter(new SimplePatternFileListFilter(FILE_PATTERN));
+//        return sourceReader;
+//    }
 
     @Bean
-    @ServiceActivator(inputChannel= "fileChannel")
-    public MessageHandler fileWritingMessageHandler() {
-        FileWritingMessageHandler handler = new FileWritingMessageHandler(new File(OUTPUT_DIR));
-        handler.setFileExistsMode(FileExistsMode.REPLACE);
-        handler.setExpectReply(false);
-        return handler;
+    @ServiceActivator(inputChannel= "httpChannel")
+    public MessageHandler httpMessageHandler() {
+        return new MyMessageLogger();
     }
 }

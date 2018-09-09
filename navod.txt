@@ -12,6 +12,9 @@ https://grokonez.com/spring-framework/spring-integration/start-spring-integratio
 
 https://www.youtube.com/watch?v=vcfvjA1P5rw
 
+https://github.com/spring-projects/spring-integration-samples/tree/master/basic/http/src/main
+http inbounad  ahtptp outbound
+
 
 adapter na prijimani hhtp get a url query
 pak posle pres ultipple channel na dva endpointy - adapter do jdbc
@@ -22,3 +25,11 @@ hhtp inbouidn adapter
 
 directo chanel  simple
 serive citoatr jen zlaoguje
+
+Build and Run the project with SpringBoot App mode.
+Make a request: http://localhost:8080/welcome/Jack with header Content-Type:application/json .
+Result:
+
+funguje to, poslu v prohlizeci get viz vyse a aplikace to zaloguje.
+
+
