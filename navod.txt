@@ -1,0 +1,24 @@
+
+
+zdroje
+
+https://www.baeldung.com/spring-integration
+
+https://docs.spring.io/spring-integration/reference/html/http.html
+
+https://docs.spring.io/spring-integration/docs/latest-ga/reference/html/configuration.html#annotations
+
+https://grokonez.com/spring-framework/spring-integration/start-spring-integration-spring-boot
+
+https://www.youtube.com/watch?v=vcfvjA1P5rw
+
+
+adapter na prijimani hhtp get a url query
+pak posle pres ultipple channel na dva endpointy - adapter do jdbc
+a endpoit service acitvator ten spusit meotdu neco  av ni jen log. info
+
+1.
+hhtp inbouidn adapter
+
+directo chanel  simple
+serive citoatr jen zlaoguje
