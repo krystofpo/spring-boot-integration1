@@ -14,17 +14,5 @@ public class IntegrationApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IntegrationApplication.class);
-//		context.registerShutdownHook();
-//
-//		Scanner scanner = new Scanner(System.in);
-//		System.out.print("Please enter q and press <enter> to exit the program: ");
-//
-//		while (true) {
-//			String input = scanner.nextLine();
-//			if ("q".equals(input.trim())) {
-//				break;
-//			}
-//		}
-//		System.exit(0);
 	}
 }

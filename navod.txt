@@ -32,4 +32,13 @@ Result:
 
 funguje to, poslu v prohlizeci get viz vyse a aplikace to zaloguje.
 
+2.
+bean hhtp inboud z xml do annotation
+https://docs.spring.io/spring-integration/docs/2.0.0.M2/spring-integration-reference/html/ch23s02.html
+tady je xml beana typu HttpInboundEndpoint a setjou se jeji fieldy.
+kdyz chci vytvori tbeanu pomoci bean annotace tak mi nejde naimportovat tato trida.
+neexistuje v kniovnach jenom HttpInboundEndpointParser a nejaky dalsi.
+si by to bylo slozity mozna nemozny
+dal
 
+3.
